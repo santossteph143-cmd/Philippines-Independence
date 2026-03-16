@@ -50,11 +50,50 @@ body {
 }
 .button:hover {
     transform: scale(1.1);
+    }
+    
+.watermark {
+    position: fixed; 
+    top: 50%;
+    nav-left: 50px; 
+    right: auto; 
+    transform: translateY(-50%); 
+    width: 45vw;
+    max-width: 400px;
+    opacity: 0.15;
+    z-index: 9998; 
+    pointer-events: none;
 }
+
+.name-container{
+    position: fixed;
+    right: 30px;   
+    top: 50%;
+    transform: translateY(-50%);
+    
+    opacity: 0.3;
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+    color: var(grey);  
+    text-align: right;
+    
+    z-index: 9999;          
+    pointer-events: none; 
+    line-height: 1.2;
+    writing-mode: horizontal-tb; 
+    }
+    
 </style>
 </head>
 
 <body>
+    <img src="bpsu-logo2.png" class="watermark" alt="BPSU Logo">
+
+    <div class="name-container">
+        <strong>STEPHANIE C. SANTOS</strong><br>
+        25-01212
+    </div> 
+
 <section class="intro">
     <h1>Philippine Independence</h1>
     <p>
